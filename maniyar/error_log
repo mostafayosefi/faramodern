@@ -1,0 +1,7 @@
+[19-Mar-2021 12:00:58 Asia/Tehran] PHP Notice:  Undefined index: tracenumber in /home/shopbiz/public_html/maniyar/callback.php on line 7
+[19-Mar-2021 12:24:52 Asia/Tehran] PHP Notice:  Undefined index: tracenumber in /home/shopbiz/public_html/maniyar/callback.php on line 7
+[19-Mar-2021 12:44:00 Asia/Tehran] PHP Notice:  Undefined index: tracenumber in /home/shopbiz/public_html/maniyar/callback.php on line 7
+[18-Apr-2021 14:45:00 Asia/Tehran] PHP Notice:  Undefined index: tracenumber in /home/shopbiz/public_html/maniyar/callback.php on line 7
+[20-Apr-2021 15:57:11 Asia/Tehran] PHP Notice:  Undefined index: tracenumber in /home/shopbiz/public_html/maniyar/callback.php on line 7
+[28-Sep-2021 18:08:04 Asia/Tehran] PHP Notice:  Undefined offset: 1 in /home/shopbiz/public_html/maniyar/payment.php on line 103
+[28-Sep-2021 18:08:11 Asia/Tehran] PHP Notice:  Undefined offset: 1 in /home/shopbiz/public_html/maniyar/payment.php on line 103
