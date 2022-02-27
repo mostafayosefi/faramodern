@@ -127,11 +127,11 @@
 <span class="btn btn-warning btn-sm">منتظر اعلام قیمت</span> 
 @elseif($admin->regp_flg=='1')  
 
-@if(Session::get('mngindexs')->ind_settingpay=='1')
+@if($mngindexs->ind_settingpay=='1')
 	<span class="btn btn-primary btn-sm "> منتظر پرداخت <i aria-hidden="true" class="fa x-circle"></i> </span> 
 	@endif
 
-@if(Session::get('mngindexs')->ind_settingpay=='2')
+@if($mngindexs->ind_settingpay=='2')
 @if($admin->regp_waitstat=='0')
 <span class="btn btn-primary btn-sm "> منتظر پرداخت <i aria-hidden="true" class="fa x-circle"></i> </span> 
 @elseif($admin->regp_waitstat!='0')

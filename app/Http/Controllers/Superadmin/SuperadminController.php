@@ -1449,6 +1449,7 @@ if($id=='delv'){
 $h = new SuperadminController();
 $h->updatenotifalert();
 
+$mngindexs = \DB::table('mngindex') ->where('id', '=', '1')->orderBy('id', 'desc')->first(); 
 
  
 
@@ -1465,7 +1466,7 @@ $requests = \DB::table('regperson')
  ['regp_flg', $rbt ,  $id], 
   ])->orderBy('regp_id', 'desc')->get(); 
 
-return view('mng.viewsrequsts' ,[ 'requests' => $requests , 'id' => $id , 'role' => $role ]); 
+return view('mng.viewsrequsts' ,[ 'requests' => $requests , 'id' => $id , 'role' => $role, 'mngindexs' => $mngindexs ]); 
 }
 
 if($role=='company'){
@@ -1477,7 +1478,7 @@ $requests = \DB::table('regcompany')
  ['regc_flg', $rbt ,  $id], 
   ])->orderBy('regc_id', 'desc')->get(); 
 
-return view('mng.viewsrequstscompany' ,[ 'requests' => $requests , 'id' => $id , 'role' => $role ]); 
+return view('mng.viewsrequstscompany' ,[ 'requests' => $requests , 'id' => $id , 'role' => $role , 'mngindexs' => $mngindexs ]); 
 }
 
  }}
