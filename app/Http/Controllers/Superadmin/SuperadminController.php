@@ -1525,11 +1525,12 @@ $h->updateshowalert($id,$role);
 
 $h = new SuperadminController();
 $h->updatenotifalert();
+$mngindexs = \DB::table('mngindex') ->where('id', '=', '1')->orderBy('id', 'desc')->first(); 
 
 
 
 
- return view('mng.obserreg'  , [  'requests' => $requests      ]); 
+ return view('mng.obserreg'  , [  'requests' => $requests ,   'mngindexs' => $mngindexs    ]); 
  }}
  
  
@@ -1551,9 +1552,10 @@ $h->updateshowalert($id,$role);
 
 $h = new SuperadminController();
 $h->updatenotifalert();
+$mngindexs = \DB::table('mngindex') ->where('id', '=', '1')->orderBy('id', 'desc')->first(); 
 
 
- return view('mng.obserregcompany'  , [  'requests' => $requests      ]); 
+ return view('mng.obserregcompany'  , [  'requests' => $requests  ,   'mngindexs' => $mngindexs     ]); 
  }}
  
  

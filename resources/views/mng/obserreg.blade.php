@@ -144,12 +144,12 @@
 
 
 
-@if(Session::get('mngindexs')->ind_settingpay=='1')
+  @if($mngindexs->ind_settingpay=='1')
 	<span style="color: #317bce"> منتظر پرداخت <i aria-hidden="true" class="fa x-circle"></i> </span> 
 	@endif
 
-@if(Session::get('mngindexs')->ind_settingpay=='2')
-@if($requests->regp_waitstat=='0')
+  @if($mngindexs->ind_settingpay=='2')
+  @if($requests->regp_waitstat=='0')
 <span style="color: #317bce"> منتظر پرداخت <i aria-hidden="true" class="fa x-circle"></i> </span> 
 @elseif($requests->regp_waitstat!='0')
 <span style="color: #317bce;  " >پرداخت دستی انجام شده(منتظرتایید)<i aria-hidden="true" class="fa x-circle"></i> </span>  
